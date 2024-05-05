@@ -12,6 +12,7 @@
     --surface-color-hover: rgba(0,0,0,0.02);
     --highlight-color: rgba(255,255,255,0.2);
     --switch-bg-url: url(moon-stars.svg);
+    --avatar: url(avatar.png);
 }
 
 .light{
@@ -22,6 +23,7 @@
     --surface-color-hover: rgba(0,0,0,0.02);
     --highlight-color: rgba(0,0,0,0.1);
     --switch-bg-url: url(sun-stars.svg);
+    --avatar: url(avatar-light.png);
 }
 
 body{
@@ -37,20 +39,25 @@ body * {
 #container{
     width: 360px;
     margin: 56px auto 0px ;
-    padding: 0 24px;
-    
-    
+    padding: 0 24px;  
 }
 
 #profile{
     text-align: center;
     padding: 24px;
+    
 }
+
 
 #profile img{
     width: 112px;
-    
+    background: var(--avatar) no-repeat center;
 }
+
+.light #profile img{
+    background: var(--avatar) no-repeat center;
+}
+
 
 #profile p {
     font-weight: 500;
