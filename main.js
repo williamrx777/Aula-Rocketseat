@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const switchButton = document.querySelector('#switch button');
-    const switchSpan = document.querySelector('#switch span');
+    
 
     switchButton.addEventListener('click', function () {
         document.body.classList.toggle('light');
