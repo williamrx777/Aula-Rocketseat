@@ -33,7 +33,7 @@ body{
 body * {
     font-family: "Inter", sans-serif;
     color: var(--text-color);
-
+    height: 100vh;
 }
 
 #container{
@@ -151,4 +151,13 @@ footer{
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+@media (min-min: 700px) {
+    :root {
+        --bg-url: url(bg-desktop.jpg)
+    }
+    .light {
+        --bg-url: url(bg-desktop-light.jpg)
+    }
 }
